@@ -1,6 +1,10 @@
    /*** use WOLFSSL to realize Algorithms sha256 and RSA2048 ***/
    //SHA256 with WOLFSSL API
-int main(int argc, char const *argv[])
+#include <stdio.h>
+#include <string.h>
+#include <hash.h>
+#include <stlib.h>
+int main()
 {
    int sha256_test(void)
    {
@@ -51,4 +55,6 @@ int main(int argc, char const *argv[])
    }
    puts(wc_Sha256Final);
    // RSA2048 with wolf WOLFSSL API
+   // 
+   // 
 }
